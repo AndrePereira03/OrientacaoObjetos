@@ -1,0 +1,46 @@
+ORIENTACAO A OBJETOS
+
+O que é objeto?
+
+Tudo. Todos os conceitos que temos é um objeto. Um copo é um objeto, um garfo,
+etc. Inclusive conceitos abstratos são objetos, como matrícula, CPF, etc.
+Geralmente, os objetos são pertencentes a uma classe.
+
+O que é clase?
+
+É onde alocamos objetos com características individuais semelhantes. Então, por exemplo,
+lapis, regua, borracha, caneta são objetos que faz sentido pertencerem a classe "materiais".
+
+encapsular é proteger o conteúdo do objeto.
+Exemplo da carteira, sendo que o dinheiro dele está encapsulado protegido.
+Assim devem ser com os nossos dados, encapsulados, protegidos.
+
+Damos autonomia ao objeto de se proteger, controlar seu conteúdo.
+Dessa forma, podemos pegar esse mesmo objeto, colocar em outro sistema e
+continua funcionando, pois ele tem controle e proteção sob seu conteúdo.
+
+OO potencializa a reutilização de software, pois você consegue pegar uma classe
+independente e jogar em outros programas.
+
+O que é herança?
+
+O mecanismo de herança permite que exapandimos softwares, programando sistemas de forma bem
+rápida. Uma empresa e um cliente tem informações em particular e informação em comum aos dois.
+Dessa forma, programamos as informações em comum a ambos numa classe e herdamos as particularidades
+de cada tipo (cliente/empresa).
+
+O que é associação?
+
+Ligar os elementos/objetos. Supondo que temos "cursos" e "alunos". Então, ligamos, associamos cursos a alunos.
+Então, conseguimos acessar um aluno e pegar todos os seus cursos, ou pegar um curso e pegar todos os seus alunos.
+1 pra n - 1 turma tem n alunos
+1 pra 1 - 1 curso tem 1 coordenador e cada coordenador pode coordenar apenas um curso.
+
+outro conceito: composição e agregação
+
+quando temos dois objetos inseparáveis, chamamos-o de TODO PARTE, comoposição (Exemplo de carro e motor)
+Quando temos objetos soltos, isolados, chamamos-o de AGREGAÇÃO (Exemplo de um motor de carro no ferro velho).
+
+Persistir : gravar os objetos em um sistema, por ex: os objetos/as informações dos alunos persistem no SIGA.
+
+Polimorfismo (muitas formas):
