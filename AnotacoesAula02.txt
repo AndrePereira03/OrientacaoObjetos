@@ -17,3 +17,91 @@ que o aluno estuda? Esssa informação não presta. Por isso, devemos abstraí-l
 Encapsulamento: Preservar os valores do conteúdo de um objeto, de tal forma que um objeto tenha total autonomia sob seu conteúdo
 Atributos ficam dentro dos objetos escondidos e o seu acesso são feitos exclusivamente pelos métodos. Ideia de guardar, esconder, proteger.
 
+
+PARTE II
+
+public class Aluno
+{
+    private int matricula;
+    private String nome;
+    private float ira;
+    private float frequencia;
+    private int cpf;
+    private String curso;
+    private int telefone;
+    private String email;
+    
+    public void setMatricula(int matricula)
+    {
+        this.matricula = matricula;
+    }
+    public int getMatricula()
+    {
+        return this.matricula;
+    }
+    public void setNome(String nome)
+    {
+        this.nome = nome;
+    }
+    public String getNome()
+    {
+        return this.nome;
+    }
+    public void setIra(float ira)
+    {
+        this.ira = ira;
+    }
+    public float getIra()
+    {
+        return this.ira;
+    }
+    public void setFrequencia(float frequencia)
+    {
+        this.frequencia = frequencia;
+    }
+    public float getFrequencia()
+    {
+        return this.frequencia;
+    }
+    public void setCpf(int cpf)
+    {
+        this.cpf = cpf;
+    }
+    public int getCpf()
+    {
+        return this.cpf;
+    }
+    public void setCurso(String curso)
+    {
+        this.curso = curso;
+    }
+    public String getCurso()
+    {
+        return this.curso;
+    }
+    public void setTelefone(int telefone)
+    {
+        this.telefone = telefone;
+    }
+    public int getTelefone()
+    {
+        return this.telefone;
+    }
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
+    public String getEmail()
+    {
+        return this.email;
+    }
+}
+
+
+INFOS IMPORTANTES:
+NOME DE CLASSE COMEÇA SEMPRE COM LETRA MAIUSCULA
+NOME DE OBJETO, METODO E ATRIBUTO É SEMPRE MINUSCULA
+NÃO EXISTE RUA, É LOGRADOURO, POIS HÁ AVENIDA, RUA, ETC.
+SEMPRE PRIMEIRO COLOCA OS ATRIBUTOS E DEPOIS OS METODOS.
+SEMPRE PEDIR DATA DE NASCIMENTO E NÃO IDADE (IDADE MUDA, DATA DE NASCIMENTO NÃO).
+
