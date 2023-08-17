@@ -1,3 +1,19 @@
 Aula 02
 
-A
+Todo objeto possui métodos e atributos.
+
+Atributos: Características próprias
+Método: Verbo, ação.
+
+Exemplo de lâmpada: 
+
+Atributos: Cor, potência, qtd. de lúmens
+
+Métodos: Acender, apagar, queimar, iluminar
+
+Abstração: devemos ignorar o que não é importante no momemnto. Exemplo: aluno estuda. Para que o SIGA vai querer saber
+que o aluno estuda? Esssa informação não presta. Por isso, devemos abstraí-la.
+
+Encapsulamento: Preservar os valores do conteúdo de um objeto, de tal forma que um objeto tenha total autonomia sob seu conteúdo
+Atributos ficam dentro dos objetos escondidos e o seu acesso são feitos exclusivamente pelos métodos. Ideia de guardar, esconder, proteger.
+
