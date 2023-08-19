@@ -7,4 +7,3 @@
 
 TALVEZ TENHA QUE USAR O GIT CONFIG --LOCAL USER.NAME " "
 ------------------------------------------ USER.EMAIL " "
-aaa
