@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=UsuarioEnergiaEletrica
+comment1.params=qtdKwH
+comment1.target=void\ setQtdKwH(float)
+comment2.params=
+comment2.target=float\ getQtdKwH()
+comment3.params=
+comment3.target=float\ calculaValorTotal()
+numComments=4
