@@ -20,7 +20,13 @@ public class Carro
         return this.qtdCombustivelConsumido;
     }
     public float calculaMediaCombustivelPorKm()
-    {
-        return 
+    {    
+        if (kmRodados > 0 && qtdCombustivelConsumido > 0)
+        {
+            return kmRodados / qtdCombustivelConsumido;
+        } else
+        {
+            return 0;
+        }
     }
 }

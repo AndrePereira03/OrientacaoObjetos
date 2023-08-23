@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Carro
+comment1.params=kmRodados
+comment1.target=void\ setKmRodados(float)
+comment2.params=
+comment2.target=float\ getKmRodados()
+comment3.params=qtdCombustivelConsumido
+comment3.target=void\ setQtdCombustivelConsumido(float)
+comment4.params=
+comment4.target=float\ getQtdCombustivelConsumido()
+comment5.params=
+comment5.target=float\ calculaMediaCombustivelPorKm()
+numComments=6
