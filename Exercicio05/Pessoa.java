@@ -40,19 +40,19 @@ public class Pessoa
        
        if(this.genero == 'm' || this.genero == 'M')
        {
-           if(imc < 19.1)
+           if(this.imc < 19.1)
            {
                mensagemCondicional = "mulher abaixo do peso";
            }
-           else if(19.1 <= imc && imc < 25.8)
+           else if(this.imc < 25.8)
            {
                mensagemCondicional = "mulher no peso normal";
            }
-           else if(25.8 <= imc && imc < 27.3)
+           else if(this.imc < 27.3)
            {
                mensagemCondicional = "mulher marginalmente acima do peso";
            }
-           else if(27.3 <= imc && imc < 32.3)
+           else if(this.imc < 32.3)
            {
                mensagemCondicional = "mulher acima do peso ideal";
            }
@@ -63,19 +63,19 @@ public class Pessoa
        }
        else if(this.genero == 'h' || this.genero == 'H')
        {
-           if(imc < 20.7)
+           if(this.imc < 20.7)
            {
                mensagemCondicional = "homem abaixo do peso";
            }
-           else if(20.7 <= imc && imc <26.4)
+           else if(this.imc < 26.4)
            {
                mensagemCondicional = "homem no peso normal";
            }
-           else if(26.4 <= imc && imc < 27.8)
+           else if(this.imc < 27.8)
            {
                mensagemCondicional = "homem marginalmente acima do peso";
            }
-           else if(27.8 <= imc && imc < 31.1)
+           else if(this.imc < 31.1)
            {
                mensagemCondicional = "homem acima do peso ideal";
            }

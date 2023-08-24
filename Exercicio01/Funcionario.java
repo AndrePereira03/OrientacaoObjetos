@@ -15,18 +15,18 @@ public class Funcionario
     }
     public void setAumentoPorcentual(float aumentoPorcentual)
     {
-        this.aumentoPorcentual = aumentoPorcentual/100;
+        this.aumentoPorcentual = aumentoPorcentual;
     }
     public float getAumentoPorcentual()
     {
         return this.aumentoPorcentual;
     }
-    public float calcularNovoSalario()
-    {
-        return this.salarioAtual*(1+this.aumentoPorcentual);
-    }
     public float calcularValorAumento()
     {
-        return this.salarioAtual*this.aumentoPorcentual;
+        return this.salarioAtual*this.aumentoPorcentual/100.0f;
+    }
+     public float calcularNovoSalario()
+    {
+        return this.salarioAtual + this.calcularValorAumento();
     }
 }
