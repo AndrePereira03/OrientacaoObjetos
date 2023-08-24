@@ -21,12 +21,12 @@ public class Funcionario
     {
         return this.aumentoPorcentual;
     }
-    public float calcularNovoSalario()
-    {
-        return this.salarioAtual*(1+this.aumentoPorcentual);
-    }
     public float calcularValorAumento()
     {
         return this.salarioAtual*this.aumentoPorcentual;
+    }
+    public float calcularNovoSalario()
+    {
+        return this.salarioAtual + this.calcularValorAumento();
     }
 }
