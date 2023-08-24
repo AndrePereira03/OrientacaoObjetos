@@ -29,4 +29,8 @@ public class Funcionario
     {
         return this.salarioAtual + this.calcularValorAumento();
     }
+    public float calcularNovoSalario()
+    {
+        return this.salarioAtual + this.calcularValorAumento();
+    }
 }
