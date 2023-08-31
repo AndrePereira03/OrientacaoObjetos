@@ -1,5 +1,3 @@
-
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,10 +5,17 @@ import org.junit.jupiter.api.Test;
 
 public class PessoaTest
 {
+    private Pessoa pessoa;
+    
+    @BeforeEach
+    public void setUp()
+    {
+        pessoa = new Pessoa();
+    }
+    
     @Test
     public void testeDeveRetornarHomemAbaixoPeso()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('h');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(20.6f);
@@ -20,7 +25,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarHomemPesoNormal()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('h');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(26.3f);
@@ -31,7 +35,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarHomemMarginalmenteAcimaPeso()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('h');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(27.7f);
@@ -42,7 +45,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarHomemAcimaPesoIdeal()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('h');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(31.0f);
@@ -53,7 +55,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarHomemObeso()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('h');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(31.2f);
@@ -64,7 +65,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarMulherAbaixoPeso()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('m');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(19.0f);
@@ -75,7 +75,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarMulherPesoNormal()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('m');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(25.7f);
@@ -86,7 +85,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarMulherMarginalmenteAcimaPeso()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('m');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(27.2f);
@@ -97,7 +95,6 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarMulherAcimaPesoIdeal()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('m');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(32.2f);
@@ -108,11 +105,24 @@ public class PessoaTest
     @Test
     public void testeDeveRetornarMulherObesa()
     {
-        Pessoa pessoa = new Pessoa();
         pessoa.setGenero('m');
         pessoa.setAltura(1.0f);
         pessoa.setPeso(32.4f);
         pessoa.calcularIMC();
         assertEquals("mulher obesa", pessoa.classificarIndiceMassaCorporal());
+    }
+    
+    @Test
+    public void deveRetornarGeneroInvalido()
+    {
+        try
+        {
+            pessoa.setGenero('A');
+            fail();
+        }
+        catch(IllegalArgumentException e)
+        {
+            assertEquals("Sexo invalido", e.getMessage());
+        }
     }
 }
