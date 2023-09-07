@@ -2,7 +2,6 @@ public class Pessoa
 {
    private float peso;
    private float altura;
-   private float imc;
    private char genero;
    
    public void setPeso(float peso)
@@ -23,7 +22,14 @@ public class Pessoa
    }
    public void setGenero(char genero)
     {
-        this.genero = genero;
+        if(!(genero == 'm' || genero == 'M' || genero == 'h' || genero == 'H'))
+        {
+           throw new IllegalArgumentException("Genero invalido"); 
+        }
+        else
+        {
+            this.genero = genero;
+        }
     }
    public char getGenero()
    {
@@ -31,28 +37,28 @@ public class Pessoa
    }
    public float calcularIMC()
    {
-       imc = peso/(altura*altura);
-       return imc;
+       return peso/(altura*altura);
    }
    public String classificarIndiceMassaCorporal()
    {
        String mensagemCondicional;
+       float imc = calcularIMC();
        
        if(this.genero == 'm' || this.genero == 'M')
        {
-           if(this.imc < 19.1)
+           if(imc < 19.1)
            {
                mensagemCondicional = "mulher abaixo do peso";
            }
-           else if(this.imc < 25.8)
+           else if(imc < 25.8)
            {
                mensagemCondicional = "mulher no peso normal";
            }
-           else if(this.imc < 27.3)
+           else if(imc < 27.3)
            {
                mensagemCondicional = "mulher marginalmente acima do peso";
            }
-           else if(this.imc < 32.3)
+           else if(imc < 32.3)
            {
                mensagemCondicional = "mulher acima do peso ideal";
            }
@@ -63,19 +69,19 @@ public class Pessoa
        }
        else if(this.genero == 'h' || this.genero == 'H')
        {
-           if(this.imc < 20.7)
+           if(imc < 20.7)
            {
                mensagemCondicional = "homem abaixo do peso";
            }
-           else if(this.imc < 26.4)
+           else if(imc < 26.4)
            {
                mensagemCondicional = "homem no peso normal";
            }
-           else if(this.imc < 27.8)
+           else if(imc < 27.8)
            {
                mensagemCondicional = "homem marginalmente acima do peso";
            }
-           else if(this.imc < 31.1)
+           else if(imc < 31.1)
            {
                mensagemCondicional = "homem acima do peso ideal";
            }

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Funcionario
+comment1.params=nome
+comment1.target=void\ setNome(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=salarioBruto
+comment3.target=void\ setSalarioBruto(float)
+comment4.params=
+comment4.target=float\ getSalarioBruto()
+comment5.params=totalAcrescimos
+comment5.target=void\ setTotalAcrescimos(float)
+comment6.params=
+comment6.target=float\ getTotalAcrescimos()
+comment7.params=totalDescontos
+comment7.target=void\ setTotalDescontos(float)
+comment8.params=
+comment8.target=float\ getTotalDescontos()
+comment9.params=
+comment9.target=float\ calcularSalarioLiquido()
+numComments=10
