@@ -14,7 +14,7 @@ public class AlunoEnsinoMedioTest
     }
     
     @Test
-    public void testeDeveRetornarFalse()
+    public void testeDeveRetornarAprovadoFalseAlunoEnsinoMedio()
     {
         alunoEnsinoMedio.setNota1(5.0f);
         alunoEnsinoMedio.setNota2(5.0f);
@@ -23,11 +23,25 @@ public class AlunoEnsinoMedioTest
     }
 
     @Test
-    public void testeDeveRetornarTrue()
+    public void testeDeveRetornarAprovadoTrueAlunoEnsinoMedio()
     {
         alunoEnsinoMedio.setNota1(6.0f);
         alunoEnsinoMedio.setNota2(8.0f);
         alunoEnsinoMedio.calculamedia();
         assertEquals(true, alunoEnsinoMedio.aprovado());
+    }
+    
+    @Test
+    public void testeDeveRetornarNomeAlunoEnsinoMedio()
+    {
+        alunoEnsinoMedio.setNome("Joao");
+        assertEquals("Joao", alunoEnsinoMedio.getNome());
+    }
+    
+    @Test
+    public void testeDeveRetornarMatriculaEnsinoMedio()
+    {
+        alunoEnsinoMedio.setMatricula(202235000);
+        assertEquals(202235000, alunoEnsinoMedio.getMatricula());
     }
 }

@@ -14,7 +14,7 @@ public class AlunoGraduacaoTest
     }
     
     @Test
-    public void testeDeveRetornarFalse()
+    public void testeDeveRetornarAprovadoFalse()
     {
         alunoGrad.setNota1(6.0f);
         alunoGrad.setNota2(6.0f);
@@ -23,11 +23,27 @@ public class AlunoGraduacaoTest
     }
 
     @Test
-    public void testeDeveRetornarTrue()
+    public void testeDeveRetornarAprovadoTrue()
     {
         alunoGrad.setNota1(7.0f);
         alunoGrad.setNota2(7.0f);
         alunoGrad.calculamedia();
         assertEquals(true, alunoGrad.aprovado());
     }
+    
+    @Test
+    public void testeDeveRetornarNomeAlunoGraduacao()
+    {
+        alunoGrad.setNome("Joao");
+        assertEquals("Joao", alunoGrad.getNome());
+    }
+    
+    @Test
+    public void testeDeveRetornarMatriculaEnsinoMedio()
+    {
+        alunoGrad.setMatricula(2022350000);
+        assertEquals(2022350000, alunoGrad.getMatricula());
+    }
+    
+    
 }
