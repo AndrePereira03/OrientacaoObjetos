@@ -21,4 +21,10 @@ class CirculoTest
         circulo.setRaio(1.0f);
         assertEquals(Math.PI, circulo.calculaArea());
     }
+    @Test
+    void deveRetornarPerimetroCirculo()
+    {
+        circulo.setRaio(1.0f);
+        assertEquals(2.0f * Math.PI, circulo.calculaPerimetro());
+    }
 }
