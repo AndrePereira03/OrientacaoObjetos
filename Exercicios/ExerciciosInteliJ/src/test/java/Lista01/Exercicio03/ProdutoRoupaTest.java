@@ -16,9 +16,15 @@ class ProdutoRoupaTest
     }
 
     @Test
-    public void deveRetornarPrecoRoupa()
+    public void deveRetornarPrecoRoupaComDesc()
     {
-        roupa.setPrecoBase(100);
-        assertEquals(80.0f, roupa.calculaPreco());
+        roupa.setPrecoBase(200.0f);
+        assertEquals(160.0f, roupa.calculaPreco());
+    }
+    @Test
+    public void deveRetornarPrecoRoupaSemDesc()
+    {
+        roupa.setPrecoBase(199.99f);
+        assertEquals(199.99f, roupa.calculaPreco());
     }
 }

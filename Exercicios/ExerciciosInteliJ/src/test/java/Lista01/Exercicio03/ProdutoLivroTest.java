@@ -16,9 +16,15 @@ class ProdutoLivroTest {
     }
 
     @Test
-    void deveRetornarPrecoLivro()
+    void deveRetornarPrecoLivroComDesc()
     {
-        livro.setPrecoBase(100);
-        assertEquals(95.0f, livro.calculaPreco());
+        livro.setPrecoBase(50.0f);
+        assertEquals(47.5f, livro.calculaPreco());
+    }
+    @Test
+    void deveRetornarPrecoLivroSemDesc()
+    {
+        livro.setPrecoBase(49.99f);
+        assertEquals(49.99f, livro.calculaPreco());
     }
 }

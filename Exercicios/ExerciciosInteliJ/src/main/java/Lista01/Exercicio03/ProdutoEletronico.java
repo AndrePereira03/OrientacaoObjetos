@@ -4,6 +4,10 @@ public class ProdutoEletronico extends Produto
 {
     public float calculaPreco()
     {
-        return this.getPrecoBase() * 0.9f;
+        if(this.getPrecoBase() >= 300.0f)
+        {
+            return this.getPrecoBase() * 0.9f;
+        }
+        return this.getPrecoBase();
     }
 }

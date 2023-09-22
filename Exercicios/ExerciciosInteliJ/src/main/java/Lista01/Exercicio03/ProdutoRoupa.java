@@ -4,6 +4,10 @@ public class ProdutoRoupa extends Produto
 {
     public float calculaPreco()
     {
-        return this.getPrecoBase() * 0.8f;
+        if(this.getPrecoBase() >= 200.0f)
+        {
+            return this.getPrecoBase() * 0.8f;
+        }
+        return this.getPrecoBase();
     }
 }

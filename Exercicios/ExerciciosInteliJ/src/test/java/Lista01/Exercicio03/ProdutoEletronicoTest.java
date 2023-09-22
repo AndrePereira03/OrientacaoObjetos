@@ -16,9 +16,15 @@ class ProdutoEletronicoTest {
     }
 
     @Test
-    void deveRetornarPrecoEletronico()
+    void deveRetornarPrecoEletronicoComDesc()
     {
-        eletronico.setPrecoBase(1000);
-        assertEquals(900.0f, eletronico.calculaPreco());
+        eletronico.setPrecoBase(300.0f);
+        assertEquals(270.0f, eletronico.calculaPreco());
+    }
+    @Test
+    void deveRetornarPrecoEletronicoSemDesc()
+    {
+        eletronico.setPrecoBase(299.99f);
+        assertEquals(299.99f, eletronico.calculaPreco());
     }
 }
