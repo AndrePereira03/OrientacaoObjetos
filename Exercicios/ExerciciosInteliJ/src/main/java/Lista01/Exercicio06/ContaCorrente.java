@@ -11,7 +11,7 @@ public class ContaCorrente extends ContaBancaria
     {
         if(valorSacado <= this.getSaldo())
         {
-            this.setSaldo(this.getSaldo());
+            this.setSaldo(this.getSaldo() - valorSacado);
         }
         else
         {
@@ -22,8 +22,8 @@ public class ContaCorrente extends ContaBancaria
     public float calcularJuros()
     {
         float temp = this.getSaldo();
-        this.setSaldo(this.getSaldo() * (1 - super.getTaxa()));
-        return this.getSaldo() - temp;
+        this.setSaldo(this.getSaldo() * (1.0f - super.getTaxa()));
+        return -(temp * super.getTaxa());
     }
 
 }
