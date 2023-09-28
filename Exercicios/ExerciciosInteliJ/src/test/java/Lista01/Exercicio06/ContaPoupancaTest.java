@@ -24,6 +24,21 @@ class ContaPoupancaTest {
     }
 
     @Test
+    void deveRetornarDepositoInvalido()
+    {
+        poupanca.setSaldo(1000.0f);
+        try
+        {
+            poupanca.depositar(0.0f);
+            fail();
+        }
+        catch (IllegalArgumentException e)
+        {
+            assertEquals("valor invalido", e.getMessage());
+        }
+    }
+
+    @Test
     void deveRetornarSaldoAposSaque()
     {
         poupanca.setSaldo(1000.0f);

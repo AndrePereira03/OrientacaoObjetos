@@ -18,6 +18,7 @@ class ProdutoAlimentoTest {
     @Test
     void deveRetornarPrecoComDesc()
     {
+        alimento.setQtddEstoque(6);
         alimento.setQtddComprada(6);
         alimento.setPrecoUnitario(5.0f);
         assertEquals(25.5f, alimento.calculaPreco());
@@ -26,6 +27,7 @@ class ProdutoAlimentoTest {
     @Test
     void deveRetornarPrecoSemDesc()
     {
+        alimento.setQtddEstoque(5);
         alimento.setQtddComprada(5);
         alimento.setPrecoUnitario(5.0f);
         assertEquals(25.0f, alimento.calculaPreco());

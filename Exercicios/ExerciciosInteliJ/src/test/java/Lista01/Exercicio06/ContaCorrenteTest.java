@@ -24,6 +24,21 @@ class ContaCorrenteTest {
     }
 
     @Test
+    void deveRetornarDepositoInvalido()
+    {
+        corrente.setSaldo(1000.0f);
+        try
+        {
+            corrente.depositar(0.0f);
+            fail();
+        }
+        catch (IllegalArgumentException e)
+        {
+            assertEquals("valor invalido", e.getMessage());
+        }
+    }
+
+    @Test
     void deveRetornarSaldoAposSaque()
     {
         corrente.setSaldo(1000.0f);

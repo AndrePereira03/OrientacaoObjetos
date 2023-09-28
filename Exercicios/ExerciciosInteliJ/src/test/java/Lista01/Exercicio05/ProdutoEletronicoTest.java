@@ -18,6 +18,7 @@ class ProdutoEletronicoTest {
     @Test
     void deveRetornarPrecoComDesc()
     {
+        eletronico.setQtddEstoque(4);
         eletronico.setQtddComprada(4);
         eletronico.setPrecoUnitario(15.0f);
         assertEquals(54, eletronico.calculaPreco());
@@ -26,6 +27,7 @@ class ProdutoEletronicoTest {
     @Test
     void deveRetornarPrecoSemDesc()
     {
+        eletronico.setQtddEstoque(3);
         eletronico.setQtddComprada(3);
         eletronico.setPrecoUnitario(15.0f);
         assertEquals(45, eletronico.calculaPreco());

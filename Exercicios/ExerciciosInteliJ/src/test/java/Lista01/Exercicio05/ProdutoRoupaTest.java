@@ -19,6 +19,7 @@ class ProdutoRoupaTest {
     void deveRetornarPrecoComDesc()
     {
         roupa.setPrecoUnitario(25.0f);
+        roupa.setQtddEstoque(3);
         roupa.setQtddComprada(3);
         assertEquals(63.75f, roupa.calculaPreco());
     }

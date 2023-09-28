@@ -4,6 +4,10 @@ public class ContaPoupanca extends ContaBancaria
 {
     public void depositar(float valorDepositado)
     {
+        if(valorDepositado <= 0)
+        {
+            throw new IllegalArgumentException("valor invalido");
+        }
         this.setSaldo(this.getSaldo() + valorDepositado);
     }
 

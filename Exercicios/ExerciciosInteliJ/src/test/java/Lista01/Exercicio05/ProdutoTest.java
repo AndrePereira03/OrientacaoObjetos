@@ -22,6 +22,31 @@ class ProdutoTest {
         produto.setQtddComprada(8);
         assertEquals(92, produto.getQtddEstoque());
     }
+
+    @Test
+    void deveRetornarQtddCompradaCorreta()
+    {
+        produto.setQtddEstoque(200);
+        produto.setQtddComprada(200);
+        assertEquals(0, produto.getQtddEstoque());
+    }
+
+    @Test
+    void deveRetornarQtddCompradaErro()
+    {
+        produto.setQtddEstoque(200);
+        try
+        {
+            produto.setQtddComprada(201);
+            fail();
+        }
+        catch(IllegalArgumentException e)
+        {
+            assertEquals("estoque insuficiente", e.getMessage());
+        }
+    }
+
+
     @Test
     void deveRetornarNome()
     {
