@@ -6,7 +6,7 @@ public abstract class Funcionario
 
     public float getSalarioMensal()
     {
-        return salarioMensal;
+        return this.salarioMensal;
     }
     public void setSalarioMensal(float salarioMensal)
     {

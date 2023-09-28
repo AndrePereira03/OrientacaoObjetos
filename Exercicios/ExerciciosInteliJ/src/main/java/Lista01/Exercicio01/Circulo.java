@@ -9,7 +9,7 @@ public class Circulo extends FormaGeometrica
 
     public double getRaio()
     {
-        return raio;
+        return this.raio;
     }
 
     public void setRaio(double raio)
@@ -19,11 +19,11 @@ public class Circulo extends FormaGeometrica
 
     public double calculaArea()
     {
-        return Math.PI * Math.pow(this.raio, 2.0f);
+        return Math.PI * Math.pow(this.getRaio(), 2.0f);
     }
     public double calculaPerimetro()
     {
-        return 2.0f * Math.PI * this.raio;
+        return 2.0f * Math.PI * this.getRaio();
     }
 
 }

@@ -2,15 +2,22 @@ package Lista01.Exercicio04;
 
 public class VooInternacional extends Voo
 {
-    float taxaInternacional = 1.67f;
-    float taxaConversao = 1.32f;
+    private float taxaConversao;
+
+    public float getTaxaConversao() {
+        return this.taxaConversao;
+    }
+
+    public void setTaxaConversao(float taxaConversao) {
+        this.taxaConversao = taxaConversao/100.0f;
+    }
 
     public float calculaPreco()
     {
         if(this.getDistancia() >= 750.0f)
         {
-            return this.getDistancia() * taxaInternacional * taxaConversao;
+            return this.getDistancia() * (1 + super.getTaxa() + this.getTaxaConversao());
         }
-        return this.getDistancia() * taxaInternacional;
+        return this.getDistancia() * (1 + super.getTaxa());
     }
 }

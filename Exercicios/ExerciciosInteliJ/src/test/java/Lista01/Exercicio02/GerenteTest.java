@@ -19,6 +19,7 @@ class GerenteTest {
     void deveRetornarPagamentoGerente()
     {
         gerente.setSalarioMensal(5000);
-        assertEquals(6350, gerente.calculaPagamento());
+        gerente.setBonus(20);
+        assertEquals(6000, gerente.calculaPagamento());
     }
 }

@@ -22,4 +22,10 @@ class ProdutoTest {
         produto.setQtddComprada(8);
         assertEquals(92, produto.getQtddEstoque());
     }
+    @Test
+    void deveRetornarNome()
+    {
+        produto.setNome("Notebook");
+        assertEquals("Notebook", produto.getNome());
+    }
 }

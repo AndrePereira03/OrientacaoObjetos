@@ -6,7 +6,7 @@ public abstract class Produto
     private float precoBase;
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -14,7 +14,7 @@ public abstract class Produto
     }
 
     public float getPrecoBase() {
-        return precoBase;
+        return this.precoBase;
     }
 
     public void setPrecoBase(float precoBase) {

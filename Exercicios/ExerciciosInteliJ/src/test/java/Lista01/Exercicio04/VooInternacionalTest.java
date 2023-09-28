@@ -18,14 +18,17 @@ class VooInternacionalTest
     @Test
     void deveRetornarPrecoTaxado()
     {
-        internacional.setDistancia(750.0f);
-        assertEquals(1653.3f, internacional.calculaPreco());
+        internacional.setDistancia(750f);
+        internacional.setTaxa(44.0f);
+        internacional.setTaxaConversao(32.0f);
+        assertEquals(1320.0f, internacional.calculaPreco());
     }
 
     @Test
     void deveRetornarPrecoSemTaxa()
     {
         internacional.setDistancia(749.99f);
-        assertEquals(1252.4833f, internacional.calculaPreco());
+        internacional.setTaxa(38);
+        assertEquals(1034.9862f, internacional.calculaPreco());
     }
 }

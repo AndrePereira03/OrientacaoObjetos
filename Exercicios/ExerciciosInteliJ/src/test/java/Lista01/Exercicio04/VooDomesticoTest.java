@@ -19,6 +19,7 @@ class VooDomesticoTest {
     void deveRetornarPrecoDomestico()
     {
         domestico.setDistancia(300.0f);
-        assertEquals(414.0f, domestico.calculaPreco());
+        domestico.setTaxa(27.0f);
+        assertEquals(381.0f, domestico.calculaPreco());
     }
 }

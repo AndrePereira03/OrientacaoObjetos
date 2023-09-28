@@ -7,7 +7,7 @@ public class Retangulo
 
     public double getBase()
     {
-        return base;
+        return this.base;
     }
     public void setBase(double base)
     {
@@ -15,7 +15,7 @@ public class Retangulo
     }
     public double getAltura()
     {
-        return altura;
+        return this.altura;
     }
     public void setAltura(double altura)
     {
@@ -23,11 +23,11 @@ public class Retangulo
     }
     public double calculaArea()
     {
-        return this.altura * this.base;
+        return this.getAltura() * this.getBase();
     }
     public double calculaPerimetro()
     {
-        return 2.0f*(this.altura + this.base);
+        return 2.0f*(this.getAltura() + this.getBase());
     }
 
 }

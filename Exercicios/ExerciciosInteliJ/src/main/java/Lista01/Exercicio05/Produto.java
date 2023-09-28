@@ -9,7 +9,7 @@ public abstract class Produto
 
     public String getNome()
     {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome)
@@ -19,7 +19,7 @@ public abstract class Produto
 
     public float getPrecoUnitario()
     {
-        return precoUnitario;
+        return this.precoUnitario;
     }
 
     public void setPrecoUnitario(float precoUnitario)
@@ -29,7 +29,7 @@ public abstract class Produto
 
     public int getQtddEstoque()
     {
-        return qtddEstoque;
+        return this.qtddEstoque;
     }
 
     public void setQtddEstoque(int qtddEstoque)
@@ -39,7 +39,7 @@ public abstract class Produto
 
     public int getQtddComprada()
     {
-        return qtddComprada;
+        return this.qtddComprada;
     }
 
     public void setQtddComprada(int qtddComprada)

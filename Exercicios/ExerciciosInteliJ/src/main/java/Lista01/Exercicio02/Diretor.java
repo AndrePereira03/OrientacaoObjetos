@@ -6,14 +6,14 @@ private float lucro;
 
     public float getLucro()
     {
-        return lucro;
+        return this.lucro;
     }
     public void setLucro(float lucro)
     {
-        this.lucro = lucro;
+        this.lucro = lucro * 0.10f;
     }
     public float calculaPagamento()
     {
-        return this.getSalarioMensal() + 0.10f * this.lucro;
+        return this.getSalarioMensal() + this.getLucro();
     }
 }
