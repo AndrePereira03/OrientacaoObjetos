@@ -1,6 +1,6 @@
-/*package Lista01.Exercicio06;
+package Lista01.Exercicio06;
 
-public class ContaCorrente extends ContaBancaria
+public class ContaPoupanca extends ContaBancaria
 {
     public void depositar(float valorDepositado)
     {
@@ -19,15 +19,14 @@ public class ContaCorrente extends ContaBancaria
         }
         else
         {
-           throw new IllegalArgumentException("Saldo insuficiente");
+            throw new IllegalArgumentException("Saldo insuficiente");
         }
     }
 
     public float calcularJuros()
     {
         float temp = this.getSaldo();
-        this.setSaldo(this.getSaldo() * (1.0f - super.getTaxa()));
-        return -(temp * super.getTaxa());
+        this.setSaldo(this.getSaldo()* (1 + super.getTaxa()));
+        return this.getSaldo() - temp;
     }
-
-}*/
+}

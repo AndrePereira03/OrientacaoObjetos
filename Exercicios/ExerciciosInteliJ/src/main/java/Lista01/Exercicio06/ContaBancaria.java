@@ -5,9 +5,10 @@ public abstract class ContaBancaria
     private float numeroConta;
     private float saldo;
     private String titular;
+    protected float taxa;
 
     public float getNumeroConta() {
-        return numeroConta;
+        return this.numeroConta;
     }
 
     public void setNumeroConta(float numeroConta)
@@ -17,7 +18,7 @@ public abstract class ContaBancaria
 
     public float getSaldo()
     {
-        return saldo;
+        return this.saldo;
     }
 
     public void setSaldo(float saldo)
@@ -27,7 +28,7 @@ public abstract class ContaBancaria
 
     public String getTitular()
     {
-        return titular;
+        return this.titular;
     }
 
     public void setTitular(String titular)
@@ -35,7 +36,16 @@ public abstract class ContaBancaria
         this.titular = titular;
     }
 
-    public abstract float deposita();
-    public abstract float saca();
-    public abstract float calculaJuros();
+    public float getTaxa()
+    {
+        return this.taxa;
+    }
+
+    public void setTaxa(float taxa) {
+        this.taxa = taxa/100.0f;
+    }
+
+    public abstract void depositar(float valorDepositado);
+    public abstract void sacar(float valorSacado);
+    public abstract float calcularJuros();
 }

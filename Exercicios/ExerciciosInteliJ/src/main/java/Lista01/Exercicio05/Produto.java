@@ -44,6 +44,10 @@ public abstract class Produto
 
     public void setQtddComprada(int qtddComprada)
     {
+        if(qtddComprada > this.qtddEstoque)
+        {
+            throw new IllegalArgumentException("estoque insuficiente");
+        }
         this.qtddComprada = qtddComprada;
         this.setQtddEstoque(this.getQtddEstoque() - this.qtddComprada);
     }

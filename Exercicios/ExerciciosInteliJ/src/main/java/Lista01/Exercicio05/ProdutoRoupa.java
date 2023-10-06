@@ -2,7 +2,7 @@ package Lista01.Exercicio05;
 
 public class ProdutoRoupa extends Produto
 {
-    float desconto = 0.15f;
+    private float desconto = 0.15f;
 
     public float calculaPreco()
     {
