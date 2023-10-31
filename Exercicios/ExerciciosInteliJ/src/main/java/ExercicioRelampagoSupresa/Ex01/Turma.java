@@ -1,6 +1,4 @@
-package associacao;
-
-import java.util.ArrayList;
+package ExercicioRelampagoSupresa.Ex01;import java.util.ArrayList;
 
 public class Turma {
 

@@ -1,5 +1,4 @@
-package associacao;
-
+package ExercicioRelampagoSupresa.Ex01;
 public class Curso {
 
     private String nome;

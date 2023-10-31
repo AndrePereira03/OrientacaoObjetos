@@ -1,5 +1,4 @@
-package associacao;
-
+package ExercicioRelampagoSupresa.Ex01;
 public class Aluno extends Pessoa {
 
     private Curso curso;

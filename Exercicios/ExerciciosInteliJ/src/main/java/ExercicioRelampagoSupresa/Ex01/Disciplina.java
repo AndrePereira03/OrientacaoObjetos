@@ -1,4 +1,3 @@
-package associacao;
-
+package ExercicioRelampagoSupresa.Ex01;
 public class Disciplina {
 }

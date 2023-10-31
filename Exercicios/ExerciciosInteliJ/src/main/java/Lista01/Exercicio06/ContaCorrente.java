@@ -1,4 +1,4 @@
-/*package Lista01.Exercicio06;
+package Lista01.Exercicio06;
 
 public class ContaCorrente extends ContaBancaria
 {
@@ -30,4 +30,4 @@ public class ContaCorrente extends ContaBancaria
         return -(temp * super.getTaxa());
     }
 
-}*/
+}
