@@ -1,9 +1,20 @@
-package ExercicioRelampagoSupresa.Ex01;import java.util.ArrayList;
+package ExercicioRelampagoSupresa.Ex01;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Turma {
 
     private Disciplina disciplina;
+    private Professor professor;
     private ArrayList<Aluno> alunos;
+
+    public Professor getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
 
     public Turma(Disciplina disciplina) {
         this.alunos = new ArrayList<Aluno>();
@@ -23,6 +34,22 @@ public class Turma {
 
     public void matricular(Aluno aluno) {
         this.alunos.add(aluno);
+    }
+
+
+    public List<String> getNomesAlunos()
+    {
+        List<String> nomesAlunos = new ArrayList<>();
+
+        for (Aluno aluno : alunos) {
+            nomesAlunos.add(aluno.getNome());
+        }
+        return nomesAlunos;
+    }
+
+    public String nomeProfessor(Professor professor)
+    {
+        return professor.getNome();
     }
 
     public void desmatricular(Aluno aluno) {

@@ -34,4 +34,10 @@ class TurmaTest {
         assertEquals(2, turma.getNumeroAlunos());
     }
 
+    @Test
+    void getNomeProfessorTurma()
+    {
+
+    }
+
 }
