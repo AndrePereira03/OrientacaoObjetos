@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4d129928-31c9-4343-be64-acc5184a8890" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anotacoes/AnotacoesAula01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Anotacoes/AnotacoesAula01.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -53,10 +53,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ExercicioRelampagoSupresa.Ex02" />
       <recent name="ExercicioRelampagoSupresa.Ex01" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ProfessorTest.deveRetornarEscolaridadeCordenador">
     <configuration name="ExercicioRelampagoSupresa.Ex01 in ExerciciosInteliJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ExerciciosInteliJ" />
       <extension name="coverage">
@@ -71,8 +72,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercicioRelampagoSupresa.Ex02 in ExerciciosInteliJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExerciciosInteliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ExercicioRelampagoSupresa.Ex02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ExercicioRelampagoSupresa.Ex02" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExerciciosInteliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ExercicioRelampagoSupresa.Ex02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ExercicioRelampagoSupresa.Ex02" />
+      <option name="MAIN_CLASS_NAME" value="ExercicioRelampagoSupresa.Ex02.ProfessorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfessorTest.deveRetornarEscolaridadeCordenador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExerciciosInteliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ExercicioRelampagoSupresa.Ex02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ExercicioRelampagoSupresa.Ex02" />
+      <option name="MAIN_CLASS_NAME" value="ExercicioRelampagoSupresa.Ex02.ProfessorTest" />
+      <option name="METHOD_NAME" value="deveRetornarEscolaridadeCordenador" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProfessorTest.deveRetornarEscolaridadeCordenador" />
+        <item itemvalue="JUnit.ProfessorTest" />
+        <item itemvalue="JUnit.ExercicioRelampagoSupresa.Ex02 in ExerciciosInteliJ" />
         <item itemvalue="JUnit.ExercicioRelampagoSupresa.Ex01 in ExerciciosInteliJ" />
       </list>
     </recent_temporary>
