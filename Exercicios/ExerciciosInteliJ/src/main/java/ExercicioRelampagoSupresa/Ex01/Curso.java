@@ -70,18 +70,18 @@ public class Curso {
         return nomesProfessores;
     }
 
-    public List<String> getNomesAlunos(Curso... cursos) {
+    /*public List<String> getNomesAlunos(Curso... cursos) {
         List<String> nomesAlunos = new ArrayList<>();
 
         for (Curso curso : cursos) {
             for (Turma turma : curso.getTurmas()) {
-                Aluno aluno = alunos.get;
-                if (professor != null) {
-                    nomesProfessores.add(professor.getNome());
+                Aluno aluno = turma.getNomesAlunos();
+                if (aluno != null) {
+                    nomesAlunos.add(aluno.getNome());
                 }
             }
         }
 
         return nomesProfessores;
-    }
+    }*/
 }
