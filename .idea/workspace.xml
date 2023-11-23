@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4d129928-31c9-4343-be64-acc5184a8890" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Disciplina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/main/java/ExercicioRelampagoSupresa/Ex01/Turma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/test/java/ExercicioRelampagoSupresa/Ex01/AlunoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/test/java/ExercicioRelampagoSupresa/Ex01/AlunoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/test/java/ExercicioRelampagoSupresa/Ex01/CursoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/test/java/ExercicioRelampagoSupresa/Ex01/CursoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/test/java/ExercicioRelampagoSupresa/Ex01/TurmaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicios/ExerciciosInteliJ/src/test/java/ExercicioRelampagoSupresa/Ex01/TurmaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotacoes/AnotacoesAula01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Anotacoes/AnotacoesAula01.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +38,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/ice/Documentos/OrientacaoObjetos"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ice/Documentos/OrientacaoObjetos&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
