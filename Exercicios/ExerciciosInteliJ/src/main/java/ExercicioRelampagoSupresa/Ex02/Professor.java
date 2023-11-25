@@ -22,5 +22,20 @@ public class Professor extends Pessoa
         return getCidade().getNome();
     }
 
+    public String getTipoEnsinoContratado()
+    {
+        return getContratado().getEnsino().getNivel();
+    }
+
+    public String getDiretorProfessor()
+    {
+        return getContratado().getEscola().getDiretor().getNome();
+    }
+
+    public String getCoordenadorProfessor()
+    {
+        return getContratado().getCoordenador().getNome();
+    }
+
 
 }

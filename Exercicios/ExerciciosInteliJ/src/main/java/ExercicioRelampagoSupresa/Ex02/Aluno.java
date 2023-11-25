@@ -22,4 +22,9 @@ public class Aluno extends Pessoa
         return getCurso().getEscola().getCidade().getEstado().getNome();
     }
 
+    public String getCoordenadorCursoAluno()
+    {
+        return getCurso().getCoordenador().getNome();
+    }
+
 }
