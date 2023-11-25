@@ -2,15 +2,15 @@ package ExercicioRelampagoSupresa.Ex02;
 
 public class Pessoa
 {
-    private Cidade cidade;
+    private Cidade naturalidade;
     private Escolaridade escolaridade;
 
     public Cidade getCidade() {
-        return cidade;
+        return naturalidade;
     }
 
-    public void setCidade(Cidade cidade) {
-        this.cidade = cidade;
+    public void setCidade(Cidade naturalidade) {
+        this.naturalidade = naturalidade;
     }
 
     public Escolaridade getEscolaridade() {
