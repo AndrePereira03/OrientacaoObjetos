@@ -17,4 +17,13 @@ private Cliente cliente;
         super(dataVenda, produto, qtdeVendida);
         this.cliente = cliente;
     }
+
+    public boolean vender(Produto produto, int qtdeVendida)
+    {
+        //String mensagem;
+        if(getProduto().verificarEstoqueInsuficiente(qtdeVendida))
+        {
+        }
+
+    }
 }
