@@ -59,5 +59,23 @@ public class Produto
         this.historico = historico;
     }
 
-    public int
+    public int debitarEstoque(int qtdeDebitada)
+    {
+        return this.qtdeEstoque -= qtdeDebitada;
+    }
+
+    public int creditarEstoque(int qtdeCreditada)
+    {
+        return this.qtdeEstoque += qtdeCreditada;
+    }
+    public boolean verificarEstoqueBaixo()
+    {
+        return this.qtdeEstoque < this.estoqueMinimo;
+    }
+    public boolean verificarEstoqueInsuficiente(int qtdePretendida)
+    {
+        return qtdePretendida > this.qtdeEstoque;
+    }
+
+
 }
