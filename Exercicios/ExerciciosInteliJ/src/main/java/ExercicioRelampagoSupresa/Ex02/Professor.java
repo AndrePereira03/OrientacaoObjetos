@@ -9,6 +9,10 @@ public class Professor extends Pessoa
     }
 
     public void setContratado(Curso contratado) {
+        if(contratado == null)
+        {
+            throw new IllegalArgumentException("professor contratado nao definido");
+        }
         this.contratado = contratado;
     }
 

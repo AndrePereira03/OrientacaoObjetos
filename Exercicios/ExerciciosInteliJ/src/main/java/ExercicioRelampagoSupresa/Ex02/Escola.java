@@ -10,6 +10,10 @@ public class Escola
     }
 
     public void setCidade(Cidade cidade) {
+        if(cidade == null)
+        {
+            throw new IllegalArgumentException("cidade nao definida");
+        }
         this.cidade = cidade;
     }
 
@@ -18,6 +22,10 @@ public class Escola
     }
 
     public void setDiretor(Professor diretor) {
+        if(diretor == null)
+        {
+            throw new IllegalArgumentException("diretor nao definido");
+        }
         this.diretor = diretor;
     }
 
@@ -25,9 +33,4 @@ public class Escola
     {
         return diretor.getTitulacaoProfessor();
     }
-
-    /*public String getTitulacaoDiretor()
-    {
-        return diretor.titulacaoProfessor();
-    }*/
 }

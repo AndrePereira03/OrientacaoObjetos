@@ -11,6 +11,10 @@ public class Cidade
     }
 
     public void setEstado(Estado estado) {
+        if(estado == null)
+        {
+            throw new IllegalArgumentException("estado nao definidp");
+        }
         this.estado = estado;
     }
 

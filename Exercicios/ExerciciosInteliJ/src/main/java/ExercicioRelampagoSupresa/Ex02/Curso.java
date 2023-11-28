@@ -11,6 +11,10 @@ public class Curso
     }
 
     public void setEnsino(TipoEnsino ensino) {
+        if(ensino == null)
+        {
+            throw new IllegalArgumentException("tipo de ensino nao definido");
+        }
         this.ensino = ensino;
     }
 
@@ -19,6 +23,10 @@ public class Curso
     }
 
     public void setCoordenador(Professor coordenador) {
+        if(coordenador == null)
+        {
+            throw new IllegalArgumentException("coordenador nao definido");
+        }
         this.coordenador = coordenador;
     }
 
@@ -28,6 +36,10 @@ public class Curso
     }
 
     public void setEscola(Escola escola) {
+        if(escola == null)
+        {
+            throw new IllegalArgumentException("escola nao definida");
+        }
         this.escola = escola;
     }
 

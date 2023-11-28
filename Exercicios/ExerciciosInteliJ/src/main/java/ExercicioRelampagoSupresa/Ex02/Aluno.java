@@ -9,6 +9,10 @@ public class Aluno extends Pessoa
     }
 
     public void setCurso(Curso curso) {
+        if(curso == null)
+        {
+            throw new IllegalArgumentException("Curso nao definido");
+        }
         this.curso = curso;
     }
 

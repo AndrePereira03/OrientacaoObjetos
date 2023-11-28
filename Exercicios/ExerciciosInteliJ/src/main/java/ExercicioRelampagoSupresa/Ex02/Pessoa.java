@@ -11,6 +11,10 @@ public class Pessoa
     }
 
     public void setCidade(Cidade naturalidade) {
+        if(naturalidade == null)
+        {
+            throw new IllegalArgumentException("naturalidade nao definida");
+        }
         this.naturalidade = naturalidade;
     }
 
@@ -19,6 +23,10 @@ public class Pessoa
     }
 
     public void setEscolaridade(Escolaridade escolaridade) {
+        if(escolaridade == null)
+        {
+            throw new IllegalArgumentException("escolaridade nao definida");
+        }
         this.escolaridade = escolaridade;
     }
 
