@@ -23,7 +23,10 @@ private Cliente cliente;
         //String mensagem;
         if(getProduto().verificarEstoqueInsuficiente(qtdeVendida))
         {
+            throw new IllegalArgumentException("Estoque insuficiente");
+            return false;
         }
+
 
     }
 }
