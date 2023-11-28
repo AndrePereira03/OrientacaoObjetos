@@ -76,6 +76,15 @@ public class Produto
     {
         return qtdePretendida > this.qtdeEstoque;
     }
+    public boolean verificarEstoqueExcedente(int qtdeExcedente)
+    {
+        return (qtdeExcedente + this.qtdeEstoque) > this.estoqueMaximo;
+    }
+    public int calcularValorVenda(int qtdeVendida)
+    {
+        return qtdeVendida * this.precoUnit;
+    }
 
+    public
 
 }
