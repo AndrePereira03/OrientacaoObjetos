@@ -27,4 +27,16 @@ private int precoUnit;
         this.fornecedor = fornecedor;
         this.precoUnit = precoUnit;
     }
+
+    public boolean comprar(Produto produto, int qtdeCompra)
+    {
+        if(getProduto().verificarEstoqueExcedente(qtdeCompra))
+        {
+            return false;
+        }
+        getProduto().creditarEstoque(qtdeCompra);
+        return true;
+    }
+
+
 }

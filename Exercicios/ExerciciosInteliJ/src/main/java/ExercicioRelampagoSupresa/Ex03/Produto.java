@@ -1,5 +1,7 @@
 package ExercicioRelampagoSupresa.Ex03;
 
+import ExercicioRelampagoSupresa.Ex02.Professor;
+
 import java.util.ArrayList;
 
 public class Produto
@@ -10,7 +12,6 @@ public class Produto
     private int estoqueMinimo;//nao podemos deixar abaixar dele
     private int estoqueMaximo;//nao pode passar dele
     private ArrayList<String> historico;//registra o que aconteceu; exemplo: venda realizada; estoque insuficiente, as transações são compra e venda;
-
     public String getNome() {
         return nome;
     }
@@ -24,6 +25,14 @@ public class Produto
     }
 
     public void setQtdeEstoque(int qtdeEstoque) {
+        if(qtdeEstoque > estoqueMaximo)
+        {
+            throw new IllegalArgumentException("Estoque acima do permitido.");
+        }
+        if(qtdeEstoque < estoqueMinimo)
+        {
+            throw new IllegalArgumentException("Estoque abaixo do permitido.");
+        }
         this.qtdeEstoque = qtdeEstoque;
     }
 
@@ -59,8 +68,21 @@ public class Produto
         this.historico = historico;
     }
 
+    public Produto(String nome, int qtdeEstoque, int precoUnit, int estoqueMinimo, int estoqueMaximo)
+    {
+        this.nome = nome;
+        this.qtdeEstoque = qtdeEstoque;
+        this.precoUnit = precoUnit;
+        this.estoqueMinimo = estoqueMinimo;
+        this.estoqueMaximo = estoqueMaximo;
+    }
+
     public int debitarEstoque(int qtdeDebitada)
     {
+        if(qtdeDebitada > this.qtdeEstoque)
+        {
+            throw new IllegalArgumentException("Estoque insuficiente.");
+        }
         return this.qtdeEstoque -= qtdeDebitada;
     }
 
@@ -82,9 +104,53 @@ public class Produto
     }
     public int calcularValorVenda(int qtdeVendida)
     {
+        if(qtdeVendida > this.qtdeEstoque)
+        {
+            throw new IllegalArgumentException("Estoque insuficiente.");
+        }
         return qtdeVendida * this.precoUnit;
     }
 
-    public
+    public void vender(String dataVenda, Cliente cliente, int qtdeVendida)
+    {
+        Venda venda = new Venda(dataVenda, cliente, this,qtdeVendida);
+        if(venda.vender(this, qtdeVendida))
+        {
+            this.historico.add("Venda realizada!");
+        }
+    }
+
+    public void comprar(String dataCompra, Fornecedor fornecedor, int qtdeCompra, int precoUnit)
+    {
+        Compra compra = new Compra(dataCompra, this, fornecedor, qtdeCompra, precoUnit);
+        if(compra.comprar(this, qtdeCompra))
+        {
+            this.historico.add("Compra realizada!");
+        }
+    }
+
+    public void registrarHistorico(String transacao)
+    {
+        if(this.historico == null)
+        {
+            this.historico = new ArrayList<>();
+        }
+        this.historico.add(transacao);
+    }
+
+    public String obterHistorico() {
+        StringBuilder historicoString = new StringBuilder();
+
+        if (this.historico == null || this.historico.isEmpty()) {
+            historicoString.append("Histórico vazio");
+        } else {
+            historicoString.append("Histórico do Produto:\n");
+            for (String transacao : this.historico) {
+                historicoString.append(transacao).append("\n");
+            }
+        }
+        return historicoString.toString();
+    }
+
 
 }
