@@ -3,6 +3,8 @@ package ExercicioRelampagoSupresa.Ex03;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProdutoTest {
@@ -123,5 +125,17 @@ class ProdutoTest {
         assertEquals(22653, produto.calcularValorVenda(27));
     }
 
+    @Test
+    void deveVenderRegistrarHistorico()
+    {
+        Cliente cliente = new Cliente("Jose", "000.000.000-00");
+        Produto produto = new Produto("Geladeira", 80, 2900, 10, 100);
+        //Venda venda = new Venda("20/04/2023", cliente, produto, 6);
+        produto.vender("25/05/2023", cliente, 6);
+        List<String> historico = produto.getHistorico();
+        assertTrue(historico.contains("Venda realizada: " + 6 + "unidades"));
+    }
 
+    @Test
+    void deve
 }

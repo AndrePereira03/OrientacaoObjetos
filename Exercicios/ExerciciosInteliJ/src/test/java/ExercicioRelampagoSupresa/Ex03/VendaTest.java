@@ -10,9 +10,29 @@ class VendaTest
     void deveRetornarVenderEstoqueInsuficiente()
     {
         Cliente cliente = new Cliente("Valdecir", "000.000.000-00");
-        Produto produto = new Produto("Cadeira", 80, 80, 20, 100);
-        Venda venda = new Venda("26/07/2023", cliente, produto, 4);
-        assertTrue(venda.getProduto().verificarEstoqueInsuficiente(81));
+        Produto produto = new Produto("Cadeira", 30, 80, 20, 100);
+        Venda venda = new Venda("26/07/2023", cliente, produto, 40);
+        //venda.getProduto().setQtdeEstoque(30);
+        assertFalse(venda.vender(produto,31));
+    }
+
+    @Test
+    void deveRetornarVenderEstoqueBaixo()
+    {
+        Cliente cliente = new Cliente("Valdecir", "000.000.000-00");
+        Produto produto = new Produto("Cadeira", 30, 80, 20, 100);
+        Venda venda = new Venda("26/07/2023", cliente, produto, 40);
+        assertFalse(venda.vender(produto,11));
+    }
+
+    @Test
+    void deveRetornarVender()
+    {
+        Cliente cliente = new Cliente("Valdecir", "000.000.000-00");
+        Produto produto = new Produto("Cadeira", 30, 80, 20, 100);
+        produto.vender("26/07/2023", cliente, 10);
+        assertEquals("Venda realizada!", produto.getHistorico());
+
     }
 
 }

@@ -75,6 +75,7 @@ public class Produto
         this.precoUnit = precoUnit;
         this.estoqueMinimo = estoqueMinimo;
         this.estoqueMaximo = estoqueMaximo;
+        this.historico = new ArrayList<>();
     }
 
     public int debitarEstoque(int qtdeDebitada)
@@ -116,7 +117,7 @@ public class Produto
         Venda venda = new Venda(dataVenda, cliente, this,qtdeVendida);
         if(venda.vender(this, qtdeVendida))
         {
-            this.historico.add("Venda realizada!");
+            this.historico.add("Venda realizada: " + qtdeVendida + "unidades");
         }
     }
 
@@ -125,7 +126,7 @@ public class Produto
         Compra compra = new Compra(dataCompra, this, fornecedor, qtdeCompra, precoUnit);
         if(compra.comprar(this, qtdeCompra))
         {
-            this.historico.add("Compra realizada!");
+            this.historico.add("Compra realizada: " + qtdeCompra + "unidades");
         }
     }
 
