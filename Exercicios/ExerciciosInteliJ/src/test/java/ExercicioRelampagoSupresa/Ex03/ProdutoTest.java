@@ -133,7 +133,7 @@ class ProdutoTest {
         Produto produto = new Produto("Geladeira", 80, 2900, 10, 100);
         produto.vender("25/05/2023", cliente, 6);
       //   List<String> historico = produto.getHistorico();
-        assertTrue(produto.getHistorico().contains("Venda realizada: " + 6 + "unidades"));
+        assertTrue(produto.getHistorico().contains("Venda realizada: " + 6 + " unidades"));
     }
 
     @Test
@@ -142,8 +142,7 @@ class ProdutoTest {
         Fornecedor fornecedor = new Fornecedor("Magalu", "000.000.000-00");
         Produto produto = new Produto("Notebook", 10, 4230, 4, 20);
         produto.comprar("20/03/2022", fornecedor, 10, 4230);
-        //assertTrue(produto.getHistorico().contains("Compra realizada: " + 10 + "unidades"));
-        assertEquals("Compra realizada: " + 10 + " unidades", produto.getHistorico());
+        assertTrue(produto.getHistorico().contains("Compra realizada: " + 10 + " unidades"));
     }
 
     @Test
@@ -154,19 +153,6 @@ class ProdutoTest {
         assertTrue(produto.getHistorico().contains("Abertura da loja!"));
     }
 
-  /*  public String obterHistorico() {
-        StringBuilder historicoString = new StringBuilder();
-
-        if (this.historico == null || this.historico.isEmpty()) {
-            historicoString.append("Histórico vazio");
-        } else {
-            historicoString.append("Histórico do Produto:\n");
-            for (String transacao : this.historico) {
-                historicoString.append(transacao).append("\n");
-            }
-        }
-        return historicoString.toString();
-    }*/
 
     @Test
     void deveRetornarHistoricoVazio()
@@ -176,4 +162,16 @@ class ProdutoTest {
     }
 
     @Test
+    void deveRetornarHistorico()
+    {
+        Produto produto = new Produto("Cenoura", 100, 1, 20, 200);
+        Cliente cliente = new Cliente("Joseval", "000.000.000-00");
+        Fornecedor fornecedor = new Fornecedor("Casas Bahia", "000.000.000-00");
+        produto.vender("20/08/2023", cliente, 34);
+        produto.comprar("20/03/2023", fornecedor, 23, 5500);
+        assertTrue(produto.obterHistorico().contains("Histórico do Produto:\n"));
+        assertTrue(produto.obterHistorico().contains("Venda realizada: " + 34 + " unidades"));
+        assertTrue(produto.obterHistorico().contains("Compra realizada: " + 23 + " unidades"));
+        ;
+    }
 }

@@ -31,8 +31,7 @@ class VendaTest
         Cliente cliente = new Cliente("Valdecir", "000.000.000-00");
         Produto produto = new Produto("Cadeira", 30, 80, 20, 100);
         produto.vender("26/07/2023", cliente, 10);
-        assertEquals("Venda realizada!", produto.getHistorico());
-
+        assertTrue(produto.getHistorico().contains("Venda realizada: " + 10 + " unidades"));
     }
 
 }

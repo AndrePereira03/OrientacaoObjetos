@@ -117,7 +117,7 @@ public class Produto
         Venda venda = new Venda(dataVenda, cliente, this,qtdeVendida);
         if(venda.vender(this, qtdeVendida))
         {
-            this.historico.add("Venda realizada: " + qtdeVendida + "unidades");
+            this.historico.add("Venda realizada: " + qtdeVendida + " unidades");
         }
     }
 
@@ -126,7 +126,7 @@ public class Produto
         Compra compra = new Compra(dataCompra, this, fornecedor, qtdeCompra, precoUnit);
         if(compra.comprar(this, qtdeCompra))
         {
-            this.historico.add("Compra realizada: " + qtdeCompra + "unidades");
+            this.historico.add("Compra realizada: " + qtdeCompra + " unidades");
         }
     }
 
