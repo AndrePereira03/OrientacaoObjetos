@@ -3,6 +3,7 @@ package ExercicioRelampagoSupresa.Ex03;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.swing.*;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -130,12 +131,49 @@ class ProdutoTest {
     {
         Cliente cliente = new Cliente("Jose", "000.000.000-00");
         Produto produto = new Produto("Geladeira", 80, 2900, 10, 100);
-        //Venda venda = new Venda("20/04/2023", cliente, produto, 6);
         produto.vender("25/05/2023", cliente, 6);
-        List<String> historico = produto.getHistorico();
-        assertTrue(historico.contains("Venda realizada: " + 6 + "unidades"));
+      //   List<String> historico = produto.getHistorico();
+        assertTrue(produto.getHistorico().contains("Venda realizada: " + 6 + "unidades"));
     }
 
     @Test
-    void deve
+    void deveComprarRegistrarHistorico()
+    {
+        Fornecedor fornecedor = new Fornecedor("Magalu", "000.000.000-00");
+        Produto produto = new Produto("Notebook", 10, 4230, 4, 20);
+        produto.comprar("20/03/2022", fornecedor, 10, 4230);
+        //assertTrue(produto.getHistorico().contains("Compra realizada: " + 10 + "unidades"));
+        assertEquals("Compra realizada: " + 10 + " unidades", produto.getHistorico());
+    }
+
+    @Test
+    void deveRetornarAcrescimoTransacao()
+    {
+        Produto produto = new Produto("Bombom", 200, 2, 20, 500);
+        produto.registrarHistorico("Abertura da loja!");
+        assertTrue(produto.getHistorico().contains("Abertura da loja!"));
+    }
+
+  /*  public String obterHistorico() {
+        StringBuilder historicoString = new StringBuilder();
+
+        if (this.historico == null || this.historico.isEmpty()) {
+            historicoString.append("Histórico vazio");
+        } else {
+            historicoString.append("Histórico do Produto:\n");
+            for (String transacao : this.historico) {
+                historicoString.append(transacao).append("\n");
+            }
+        }
+        return historicoString.toString();
+    }*/
+
+    @Test
+    void deveRetornarHistoricoVazio()
+    {
+        Produto produto = new Produto("Cenoura", 100, 1, 20, 200);
+        assertEquals("Histórico vazio", produto.obterHistorico());
+    }
+
+    @Test
 }
