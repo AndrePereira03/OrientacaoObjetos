@@ -20,4 +20,9 @@ public class Filial
     public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
     }
+
+    public String getNomeDiretorEmpresaFilial()
+    {
+        return this.empresa.getDiretor().getNome();
+    }
 }

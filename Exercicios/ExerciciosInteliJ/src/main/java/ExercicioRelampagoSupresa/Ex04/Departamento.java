@@ -20,4 +20,9 @@ public class Departamento
     public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
     }
+
+    public String getEscolaridadeChefeDepartamento()
+    {
+        return this.chefia.getEscolaridade().getFormacao();
+    }
 }

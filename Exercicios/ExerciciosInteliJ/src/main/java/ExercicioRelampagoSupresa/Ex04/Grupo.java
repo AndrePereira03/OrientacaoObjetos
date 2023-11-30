@@ -23,7 +23,7 @@ public class Grupo
 
     public String getEscolaridadePresidenteGrupo()
     {
-        return getPresidente().getEscolaridade().getFormacao();
+        return this.presidente.getEscolaridade().getFormacao();
     }
 
 

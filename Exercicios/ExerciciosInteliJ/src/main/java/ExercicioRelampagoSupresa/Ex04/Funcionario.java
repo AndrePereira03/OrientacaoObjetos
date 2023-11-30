@@ -5,6 +5,7 @@ public class Funcionario
     private Filial coordenacao;
     private Escolaridade escolaridade;
     private Departamento alocado;
+    private String nome;
 
     public Filial getCoordenacao() {
         return coordenacao;
@@ -32,11 +33,19 @@ public class Funcionario
 
     public String getPaisAlocacaoFuncionario()
     {
-        return getAlocado().getEmpresa().getGrupo().getSede().getNome();
+        return this.alocado.getEmpresa().getGrupo().getSede().getNome();
     }
 
     public String getEstadoFilialCoordenada()
     {
-        return getCoordenacao().getCidade().getEstado().getNome();
+        return this.coordenacao.getCidade().getEstado().getNome();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
