@@ -21,4 +21,14 @@ class FuncionarioTest
         funcionario.getAlocado().getEmpresa().getGrupo().getSede().setNome("Brasil");
         assertEquals("Brasil", funcionario.getPaisAlocacaoFuncionario());
     }
+
+    @Test
+    void deveRetornarEstadoFilialFuncionarioCoordena()
+    {
+        Funcionario coordenador = new Funcionario();
+        Filial filial = new Filial();
+        Cidade cidade = new Cidade();
+        Estado estado = new Estado();
+        coordenador.setCoordenacao();
+    }
 }
