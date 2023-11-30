@@ -21,6 +21,12 @@ public class Filial
         this.empresa = empresa;
     }
 
+    /*public Filial(Cidade cidade, Empresa empresa)
+    {
+        this.cidade = cidade;
+        this.empresa = empresa;
+    }*/
+
     public String getNomeDiretorEmpresaFilial()
     {
         return this.empresa.getDiretor().getNome();

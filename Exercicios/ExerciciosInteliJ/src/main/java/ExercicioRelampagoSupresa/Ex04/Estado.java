@@ -20,4 +20,9 @@ public class Estado
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    /*public Estado(Pais pais)
+    {
+        this.pais = pais;
+    }*/
 }

@@ -11,4 +11,9 @@ public class Cidade
     public void setEstado(Estado estado) {
         this.estado = estado;
     }
+
+    /*public Cidade(Estado estado)
+    {
+        this.estado = estado;
+    }*/
 }
