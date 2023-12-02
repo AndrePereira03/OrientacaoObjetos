@@ -25,10 +25,14 @@ class FuncionarioTest
     @Test
     void deveRetornarEstadoFilialFuncionarioCoordena()
     {
-        Funcionario coordenador = new Funcionario();
-        Filial filial = new Filial();
+        Funcionario funcionario = new Funcionario();
+        Filial coordenador = new Filial();
         Cidade cidade = new Cidade();
         Estado estado = new Estado();
-        coordenador.setCoordenacao();
+        funcionario.setCoordenacao(coordenador);
+        funcionario.getCoordenacao().setCidade(cidade);
+        funcionario.getCoordenacao().getCidade().setEstado(estado);
+        funcionario.getCoordenacao().getCidade().getEstado().setNome("Minas Gerais");
+        assertEquals("Minas Gerais", funcionario.getEstadoFilialCoordenada());
     }
 }
