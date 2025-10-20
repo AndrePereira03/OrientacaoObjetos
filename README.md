@@ -25,12 +25,10 @@ O objetivo é consolidar os **princípios de POO** (encapsulamento, herança, po
 - **Pacotes e visibilidade** (`public`, `protected`, `private`)
 - **Coleções** (`List`, `Set`, `Map`) e sobrecarga de `equals`/`hashCode`
 
-Pastas de destaque (exemplos):
+Pastas importantes:
 
-- `Exercicios/ExerciciosInteliJ` (Maven) — contém `pom.xml`, fontes em `src/main/java` e testes em `src/test/java`
-- `Exercicios/Exercicio05` (Maven) — contém `pom.xml` e `org.example.Main`
-- `Exercicios/Exercicio01`..`Exercicio04`, `ExercicioProfessor`, `Heranca` — exercícios isolados (BlueJ/sem Maven)
-- `Anotacoes/` — anotações de aula
+- `Exercicios/ExerciciosInteliJ` (Maven) — Contém `pom.xml`, entidades em `src/main/java` e testes em `src/test/java`
+- `Exercicios/Exercicio01`..`Exercicio04`, `ExercicioProfessor`, `Heranca` — Exercícios isolados (BlueJ/sem Maven)
 
 Os exercícios estão nomeados de forma descritiva e seguem a estrutura sugerida em aula, facilitando a navegação e o entendimento progressivo dos conceitos.
 
@@ -38,9 +36,7 @@ Os exercícios estão nomeados de forma descritiva e seguem a estrutura sugerida
 
 ## **Execução dos Projetos**
 
-Cada pasta representa um projeto independente, podendo ser aberta e executada no ambiente de preferência do desenvolvedor.
-
-As implementações foram desenvolvidas e testadas principalmente no **IntelliJ IDEA**, mas podem ser executadas também em outros ambientes como **VS Code** ou **Eclipse**, desde que estejam devidamente configurados com o **JDK 17+** e, quando aplicável, o **Maven**.
+Cada pasta representa um projeto independente, podendo ser aberta e executada no ambiente de preferência do desenvolvedor. As implementações foram desenvolvidas e testadas principalmente no **IntelliJ IDEA**, mas podem ser executadas também em outros ambientes como **VS Code** ou **Eclipse**, desde que estejam devidamente configurados com o **JDK 17+** e com o **Maven**, quando aplicável.
 
 ### Opções de execução
 
@@ -58,8 +54,8 @@ Muitos exercícios incluem **testes automatizados** escritos em **JUnit 5**, com
 
 ## **Objetivo pedagógico e Motivação**
 
-Este projeto tem caráter didático e prático, buscando desenvolver a capacidade de abstração, modelagem e implementação de sistemas orientados a objetos. As atividades foram elaboradas para estimular o raciocínio de projeto, incentivando o uso de boas práticas, organização modular e clareza de código.
+Este projeto tem caráter **didático e prático**, buscando desenvolver a **capacidade de abstração, modelagem e implementação de sistemas orientados a objetos.** As atividades foram elaboradas para estimular o raciocínio de projeto, incentivando o uso de **boas práticas, organização modular e clareza de código.**
 
-Além do aprendizado técnico, este repositório também reflete a aplicação de padrões fundamentais de design e de conceitos essenciais para o desenvolvimento em linguagens orientadas a objetos, além de servir como material de apoio e referência para estudos futuros.
+Além do aprendizado técnico, este repositório também reflete a aplicação de **padrões fundamentais de design** e de **conceitos essenciais** para o desenvolvimento em linguagens orientadas a objetos, além de servir como material de apoio e referência para estudos futuros.
 
-A diversidade de exercícios permitiu-me exercitar tanto a análise conceitual de problemas quanto a implementação prática das soluções em um ambiente real de desenvolvimento.
+A diversidade de exercícios permitiu-me exercitar tanto a **análise conceitual** de problemas quanto a **implementação prática** das soluções em um ambiente **real** de desenvolvimento.
